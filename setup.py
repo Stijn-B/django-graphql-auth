@@ -43,7 +43,7 @@ setup(
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
         "Django>=3.2.0",
-        "-e git+https://github.com/Stijn-B/django-graphql-jwt.git#egg=django_graphql_jwt",
+        "git+https://github.com/Stijn-B/django-graphql-jwt.git#egg=django_graphql_jwt",
         "django-filter>=2.2.0",
         "graphene_django>=2.1.8",
         "graphene>=2.1.8",
