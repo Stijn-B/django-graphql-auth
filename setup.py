@@ -42,12 +42,11 @@ setup(
     ),
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
-        "Django>=2.2.0",
-        "django-graphql-jwt==0.3.0",
+        "Django>=3.2.0",
+        "-e git+https://github.com/Stijn-B/django-graphql-jwt.git#egg=django_graphql_jwt",
         "django-filter>=2.2.0",
         "graphene_django>=2.1.8",
         "graphene>=2.1.8",
-        "PyJWT<2.0.0",
     ],
     tests_require=tests_require,
     classifiers=[
@@ -63,6 +62,7 @@ setup(
         "Framework :: Django",
         "Framework :: Django :: 2.2",
         "Framework :: Django :: 3.0",
+        "Framework :: Django :: 3.2",
     ],
     keywords="api graphql rest relay graphene auth",
     zip_safe=False,
