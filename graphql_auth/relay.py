@@ -197,5 +197,5 @@ class RevokeToken(
 ):
     __doc__ = VerifyOrRefreshOrRevokeTokenMixin.__doc__
 
-    class Input:
-        refresh_token = graphene.String(required=True)
+    class Input(graphql_jwt.mixins.RevokeMixin):
+        """Revoke Input"""
