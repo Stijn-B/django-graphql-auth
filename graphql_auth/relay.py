@@ -197,5 +197,5 @@ class RevokeToken(
 ):
     __doc__ = VerifyOrRefreshOrRevokeTokenMixin.__doc__
 
-    class Input(graphql_jwt.mixins.RevokeMixin):
+    class Input(graphql_jwt.mixins.RevokeMixin.Fields):
         """Revoke Input"""
